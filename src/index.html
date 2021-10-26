@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head element -->
+
+<head>
+    <!-- title of the HTML page -->
+    <title>Home Page</title>
+
+    <!-- character encoding of the document -->
+    <meta charset="UTF-8">
+</head>
+
+
+<!-- Main body of the webpage -->
+
+<body>
+    <!-- Header of the webpage structure -->
+    <header>
+        <!-- Clickable logo so that the user can return to the home page -->
+        <input type="image" src="images/Group 9739.png" width="200" height="50">
+
+        <!-- Navigation pages or anchor links to navigate to the respective page -->
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Featured</a>
+        <a href="index.html">Contact</a>
+
+        <!-- Search option to search the user entered data -->
+        <input type="search" placeholder="Saved Search">
+
+        <!-- User can check the notifications here -->
+        <input type="image" src="images/NotificationIcon.png" width="40" height="40" value="Notification">
+
+        <!-- Login button -->
+        <input type="button" name="Login" value="LOGIN">
+    </header>
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <!-- SectionOne begins -->
+    <!-- SectionOne of the page with buying/selling/renting options and a search filter -->
+    <section style="padding: 25px">
+
+        <!-- Header section-->
+        <header>
+            <h2>Let's find<br><em>yours Dream..</em></h2>
+        </header>
+        <h3>Building award winning properties across<br>London UK and the All world</h3>
+
+        <!-- Embedded Images in this section -->
+        <figure>
+            <picture>
+                <img src="images/pierre-chatel-innocenti-gxyeia7Syuk-unsplash.png" alt="SectionOne Image" width="1000"
+                    height="526">
+            </picture>
+        </figure>
+
+        <!-- Links section -->
+        <!-- Navigate to a different view for Buying, Selling or Renting -->
+        <a href="index.html">Buy</a>
+        <a href="index.html">Sell</a>
+        <a href="index.html">Rent</a>
+
+        <!-- Form section -->
+        <!-- Form for searching an apartment based on the input arguments -->
+        <!-- Used GET method since POST is not being supported as of now -->
+        <form action="index.html" method="GET">
+            <fieldset>
+                <!-- City or street filter -->
+                <label>City/Street</label>
+                <input type="text" name="City/Street" placeholder="Enter City" required>
+
+                <!-- Filter the apartment type. -->
+                <label>Apartment Type</label>
+                <select name="apartment type" required="required">
+
+                    <!-- Default value which is disabled -->
+                    <option value="" disabled="disabled" selected>Select an apartment type</option>
+
+                    <option value="DEL">DELUXE PORTION</option>
+                    <option value="DBLH">DOUBLE HEIGHT</option>
+                    <option value="PENT">PENTHOUSE</option>
+                    <option value="STD">THE STUDIO</option>
+                </select>
+
+                <!-- Select the price range. NOTE: Can I use the range attibute for this?? -->
+                <label>Price Range</label>
+                <select name="Price Range" required="required">
+                    <!-- Default value which is disabled -->
+                    <option value="" disabled="disabled" selected>Min Price - Max Price</option>
+
+                    <option value="1000To1500">$1000 - $1500</option>
+                    <option value="1500To2000">$1500 - $2000</option>
+                    <option value="2000To2500">$2000 - $2500</option>
+                    <option value="2500Plus">&gt; $2500</option>
+                </select>
+            </fieldset>
+            <button>+ Advanced Filter</button>
+            <button type="submit">Search</button>
+        </form>
+
+    </section>
+    <!-- SectionOne ends -->
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <!-- SectionTwo begins -->
+    <!-- SectionTwo of the page where the user can select the apartment type of their choice -->
+    <section style="padding: 25px">
+
+        <!-- Header section -->
+        <header>
+            <h2>HI, What do you want to your<br><em>Dream Apartment</em></h2>
+        </header>
+
+        <!-- Form section -->
+        <!-- Used GET method since POST is not being supported as of now -->
+        <form action="index.html" method="GET">
+            <!-- Select the type of apartment type from the thumbnails -->
+            <fieldset>
+                <label>Select a Apartment type below to begins</label>
+
+                <input type="radio" name="Types" value="DeluxePortion" checked="checked">
+                <img src="images/DeluxePortion.png" width="253" height="200">
+
+                <input type="radio" name="Types" value="DoubleHeight">
+                <img src="images/DoubleHeight.png" width="253" height="200">
+
+                <input type="radio" name="Types" value="Penthouse">
+                <img src="images/Penthouse.png" width="253" height="200">
+
+                <input type="radio" name="Types" value="TheStudio">
+                <img src="images/TheStudio.png" width="253" height="200">
+            </fieldset>
+
+            <!-- Click the submit button after selecting the apartment type -->
+            <button type="submit">Continue</button>
+        </form>
+    </section>
+    <!-- SectionTwo ends -->
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <!-- SectionThree begins -->
+    <!-- SectionThree of the page where the featured apartments are displayed -->
+    <section style="padding: 25px">
+
+        <!-- Header section -->
+        <header>
+            <h2>Featured Apartment</h2>
+            <h3>The Most frequently searched and most populer apartment of the application will be in the list</h3>
+        </header>
+
+        <input type="image" src="images/featuredApartment1.png" width="300" height="367" value="FA1">
+        <input type="image" src="images/featuredApartment2.png" width="300" height="367" value="FA2">
+        <input type="image" src="images/featuredApartment3.png" width="300" height="367" value="FA3">
+
+        <!-- SVG used to make three dots as shown in the sample webpage -->
+        <div style="padding-left: 420px">
+            <svg width="30" height="30" viewbox="0 0 50 50">
+                <circle cx="30" cy="35" r="10.5" stroke="lightgrey" fill="lightgrey" />
+            </svg>
+            <svg width="25" height="30" viewbox="0 0 50 50">
+                <circle cx="20" cy="36.9" r="13" stroke="#2289FF" fill="#2289FF" />
+            </svg>
+            <svg width="25" height="30" viewbox="0 0 50 50">
+                <circle cx="14" cy="36.9" r="13" stroke="lightgrey" fill="lightgrey" />
+            </svg>
+        </div>
+
+    </section>
+    <!-- SectionThree ends -->
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <!-- SectionFour begins -->
+    <!-- SectionFour of the page where the apartment plans -->
+    <section style="padding: 25px">
+
+        <!-- Header section -->
+        <header>
+            <h1>Apartment Plans</h1>
+        </header>
+
+        <!-- Plan selection section of this article -->
+        <!-- Radio buttons from veiwing the preferred apartment types -->
+        <input type="radio" name="Plans" value="Studio">
+        <label for="Studio">The Studio</label>
+
+        <input type="radio" name="Plans" value="DeluxePortion" checked="checked">
+        <label for="DeluxePortion">Deluxe Portion</label>
+
+        <input type="radio" name="Plans" value="Penthouse">
+        <label for="Penthouse">Penthouse</label>
+
+        <input type="radio" name="Plans" value="TopGarden">
+        <label for="TopGarden">Top Garden</label>
+
+        <input type="radio" name="Plans" value="DoubleHeight">
+        <label for="DoubleHeight">Double Height</label>
+
+        <!-- Apartment plans and descriptions -->
+        <div>
+            <img src="images/Image 6.png" width="349" height="359">
+            <dl>
+                <dt>Deluxe Portion</dt>
+                <dd>Boasting chick interiors, three private balconies and a remarkable terrace, this two bedroom
+                    apartment will epitomise complete luxury. Not only will residents benefit from a superb location in
+                    the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke
+                    concierge.</dd>
+            </dl>
+
+            <!-- Apartment room areas -->
+            <p>Total Area ............................................2800 Sq. Ft</p>
+            <p>Bedroom ..............................................2800 Sq. Ft</p>
+            <p>Bathroom .............................................2800 Sq. Ft</p>
+            <p>Smoking/ pets ......................................2800 Sq. Ft</p>
+            <p>Lounge ................................................2800 Sq. Ft</p>
+        </div>
+
+    </section>
+    <!-- SectionFour ends -->
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <!-- SectionFive begins -->
+    <!-- SectionFive of the page where you can view all the apartments -->
+    <section style="padding: 25px">
+
+        <!-- Header section -->
+        <header>
+            <h2>Buy<br>Dream Apartment<br>In <em>Prime Location</em></h2>
+        </header>
+
+        <!-- Section with the button to view all the apartments -->
+        <input type="button" name="SeeApartments" value="See All Apartment">
+
+        <!-- Section with all the embedded medias -->
+        <figure>
+            <video src="images/delux2.png" poster="images/delux2.png" type="video/mp4" controls width="349"
+                height="200"></video>
+            <picture>
+                <img src="images/THE-SELECT-TEN----Bedroom-Apartment---Wintergarden-(Floor-33-34).png" width="750"
+                    height="479">
+                <img src="images/Union 2.png" width="150" height="150">
+            </picture>
+        </figure>
+
+    </section>
+    <!-- SectionFive ends -->
+
+    <!-- Footer of the webpage structure -->
+    <footer>
+
+        <!-- Clickable logo so that the user can return to the home page -->
+        <input type="image" src="images/Group 9739.png" width="200" height="50">
+        <p>The most beautiful exclusive<br>properties and luxury apartments</p>
+
+        <!-- Useful links - anchor elements -->
+        <div>
+            <h4>Useful Links</h4>
+            <a href="index.html">About</a>
+            <a href="index.html">Partners</a>
+            <a href="index.html">Contact</a>
+        </div>
+
+        <!-- Help - anchor elements -->
+        <div>
+            <h4>Help?</h4>
+            <a href="index.html">FAQ</a>
+            <a href="index.html">Terms & Condition</a>
+            <a href="index.html">Policy</a>
+            <a href="index.html">Privacy</a>
+        </div>
+
+        <!-- Social media icon buttons -->
+        <input type="image" src="images/Group 9740.png" width="40" height="40" value="FB">
+        <input type="image" src="images/Group 9741.png" width="40" height="40" value="TWEET">
+        <input type="image" src="images/Group 9742.png" width="40" height="40" value="INSTA">
+        <input type="image" src="images/Group 9743.png" width="40" height="40" value="TELE">
+
+        <p>&copy; Copyright 2021, morden.com</p>
+    </footer>
+</body>
+
+</html>
